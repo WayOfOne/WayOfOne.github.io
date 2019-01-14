@@ -1,4 +1,8 @@
-
+body > div{
+    margin-left: 1in;
+    margin-right:1in;
+    min-width: 700px;
+}
 #name{
     font-family: "Lucida Console", Monaco, monospace;
     color: #747fe0;
@@ -82,9 +86,6 @@
     border-radius: 0 0 4px 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
     font-family: "Lucida Console", Monaco, monospace;
-    margin: 0;
-    padding: 0;
-    border: 0;
     font-size: 100%;
 }
 
@@ -102,7 +103,7 @@
 }
 
 .input, .blinking{
-    color: #f7f7f7; 
+    color: #e4eee4; 
 } 
 
 .output{
@@ -110,7 +111,7 @@
 }
 
 #blinking-span-2{
-    background-color: rgba(214, 207, 207, 0.6);
+    background-color: rgba(238, 228, 228, 0.6);
     animation: blinker 1s linear infinite;
 }
 
