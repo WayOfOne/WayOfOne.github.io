@@ -1,14 +1,22 @@
-body > div{
+body{
     margin-left: 1in;
     margin-right:1in;
+    margin-bottom: 2in;
     min-width: 700px;
 }
-#name{
+
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #BD93F9;
+}
+#intro{
     font-family: "Lucida Console", Monaco, monospace;
     color: #747fe0;
     font-size: 3.5em;
 }
-#blinking-span{
+
+.blinking{
     background-color: rgba(116,127,224,.70);
     -webkit-animation: blinker 1s linear infinite;
     -moz-animation: blinker 1s linear infinite;
@@ -46,6 +54,12 @@ body > div{
     }
 }
 
+#bio{
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-weight: 200;
+    font-size: 1.3em;
+    line-height: 40px;
+}
 
   /* terminal styling */
   #terminal-header{
@@ -87,31 +101,45 @@ body > div{
     box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 100%;
+    
 }
 
-#terminal-body > div{
+#terminal-body > div, #terminal-body > span{
     font-family: "Lucida Console", Monaco, monospace;
     margin: 0;
-    padding-block-start: .25in;
-    padding-top: .05cm;
+    padding-top: .50cm;
     padding-left: .25in;
-    padding-block-end: .25in;
+    padding-block-end: .05in;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
 
-.input, .blinking{
-    color: #e4eee4; 
-} 
-
-.output{
-    color: #b7d184;
+.output, .output > a{
+    color: rgb(255, 252, 45);
 }
 
-#blinking-span-2{
-    background-color: rgba(238, 228, 228, 0.6);
-    animation: blinker 1s linear infinite;
+.input{
+    color: rgb(255, 255, 255);
+    display: flex;
 }
+
+.background-white{
+    background-color:#ffffff;
+}
+
+/* colors */
+.green{
+    color:#52ee67;
+}
+
+.purple{
+    color:#BD93F9;
+}
+
+.lb{
+    color:#6feeff;
+}
+
 
