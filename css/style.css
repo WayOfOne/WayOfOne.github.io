@@ -6,14 +6,41 @@
 }
 #blinking-span{
     background-color: rgba(116,127,224,.70);
-    animation: blinker 1s linear infinite;
+    -webkit-animation: blinker 1s linear infinite;
+    -moz-animation: blinker 1s linear infinite;
+    -o-animation: blinker 1s linear infinite;
+    -ms-animation: blinker 1s linear infinite;
 }
 
 @keyframes blinker {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
+@-moz-keyframes blinker  /* Firefox */
+{
+    50% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes blinker  /* Safari and Chrome */
+{
+    50% {
+        opacity: 0;
+    }
+}
+@-o-keyframes blinker  /* Opera */
+{
+    50% {
+        opacity: 0;
+    }
+}
+@-ms-keyframes blinker  /* IE */
+{
+    50% {
+        opacity: 0;
+    }
+}
 
 
   /* terminal styling */
