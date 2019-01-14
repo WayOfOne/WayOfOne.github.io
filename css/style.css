@@ -14,3 +14,76 @@
       opacity: 0;
     }
   }
+
+
+  /* terminal styling */
+  #terminal-header{
+    height: 28px;
+    background-color: #e4e3e5;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  #terminal-header div{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 9px;
+  }
+
+  #terminal-red-button{
+    background-color: #f96256;
+    border: 1px solid #f65549;
+}
+
+#terminal-green-button{
+    background-color: #33c948;
+    border: 1px solid #2dbb41;
+}
+
+#terminal-yellow-button{
+    background-color: #fdbc3d;
+    border: 1px solid #ffb524;
+}
+
+#terminal-body{
+    background-color: #5a5d7a;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+#terminal-body > div{
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0;
+    padding-block-start: .25in;
+    padding-top: .05cm;
+    padding-left: .25in;
+    padding-block-end: .25in;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.input, .blinking{
+    color: #f7f7f7; 
+} 
+
+.output{
+    color: #b7d184;
+}
+
+#blinking-span-2{
+    background-color: rgba(214, 207, 207, 0.6);
+    animation: blinker 1s linear infinite;
+}
+
