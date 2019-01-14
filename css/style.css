@@ -1,0 +1,16 @@
+
+#name{
+    font-family: "Lucida Console", Monaco, monospace;
+    color: #747fe0;
+    font-size: 3.5em;
+}
+#blinking-span{
+    background-color: rgba(116,127,224,.70);
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
